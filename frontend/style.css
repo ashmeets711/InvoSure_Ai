@@ -1,0 +1,109 @@
+/* Custom Styles for InvoSureAI */
+:root {
+    --primary-blue: #0d6efd;
+    --dark-bg: #212529;
+    --success-green: #198754;
+    --danger-red: #dc3545;
+    --glass-white: rgba(255, 255, 255, 0.95);
+}
+
+body {
+    background-color: #f0f2f5;
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    color: #333;
+}
+
+/* Navbar Enhancements */
+.navbar {
+    border-bottom: 3px solid var(--primary-blue);
+}
+
+.nav-link {
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+    transform: translateY(-1px);
+}
+
+/* Stat Cards & Icon Circles */
+.stat-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 16px;
+    background: white;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1) !important;
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Light Backgrounds for Badges/Icons */
+.bg-primary-light { background-color: #e7f0ff; }
+.bg-success-light { background-color: #e9f7ef; }
+.bg-danger-light { background-color: #fdeaea; }
+
+/* The AI Gradient Banner */
+.bg-primary-gradient {
+    background: linear-gradient(135deg, #0d6efd 0%, #0046b3 100%);
+    border: none;
+}
+
+.hover-up {
+    transition: all 0.3s ease;
+}
+
+.hover-up:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2) !important;
+}
+
+/* Login/Signup Card Styling */
+.auth-card {
+    border-radius: 24px;
+    border: none;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Upload Zone for Analyze Page */
+.upload-zone {
+    border: 3px dashed #cbd5e0;
+    border-radius: 20px;
+    padding: 80px 40px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.upload-zone:hover {
+    border-color: var(--primary-blue);
+    background-color: #f8fbff;
+    cursor: pointer;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.dropdown-item {
+    border-radius: 8px;
+    padding: 8px 15px;
+}
+.navbar-brand img {
+    border-radius: 8px; /* Smooth corners */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background if transparent */
+    padding: 2px;
+}
